@@ -1,11 +1,13 @@
 @import '../libs/normlize.css';
-@import './fonts';
-@import './components/test';
+@import './fonts.scss';
+@import './components/header.scss';
+@import './components/header-logo';
 
 body {
-  @include mobile {
-    background: black;
-  }
-
   font-family: 'Open Sans', 'Arial', sans-serif;
+  background: black;
 };
+
+div {
+  box-sizing: border-box;
+}

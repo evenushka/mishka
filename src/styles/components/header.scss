@@ -1,0 +1,13 @@
+.header {
+  &__inner {
+    height: 90px;
+    width: 100%;
+    background: $color-white;
+    border-bottom: 1px solid $color-gray-line;
+    position: relative;
+
+    @include mobile {
+      height: 80px;
+    }
+  }
+}
