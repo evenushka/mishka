@@ -1,6 +1,7 @@
-@import "fonts.scss";
-@import "variables.scss";
+@import '../libs/normlize.css';
+@import './variables';
+@import './fonts';
 
 body {
   font-family: 'Open Sans', 'Arial', sans-serif;
-}
+};

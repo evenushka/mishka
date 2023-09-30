@@ -1,1 +1,2 @@
-alert ('it works!')
+import './index.html';
+import './styles/index.scss';
