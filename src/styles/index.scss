@@ -2,7 +2,10 @@
 @import './fonts';
 @import './components/test';
 
-
 body {
+  @include mobile {
+    background: black;
+  }
+
   font-family: 'Open Sans', 'Arial', sans-serif;
 };

@@ -23,6 +23,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src', 'index.html'),
         }),
+        new HtmlWebpackPlugin({
+            filename: "order.html",
+            template: path.resolve(__dirname, 'src', 'order.html'),
+        }),
+        new HtmlWebpackPlugin({
+            filename: "catalog.html",
+            template: path.resolve(__dirname, 'src', 'catalog.html'),
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
         }),
