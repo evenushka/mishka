@@ -27,6 +27,11 @@ module.exports = {
             filename: '[name].[contenthash].css',
         }),
     ],
+    resolve: {
+        alias: {
+            Styles: path.resolve(__dirname, './src/styles')
+        },
+    },
     module: {
         rules: [
             {
@@ -35,7 +40,16 @@ module.exports = {
             },
             {
                 test: /\.(c|sa|sc)ss$/i,
-                use: [devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+                use: [
+                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            additionalData: '@import "Styles/variables.scss"; @import "Styles/mixins/mixin-adaptive.scss";',
+                        },
+                    },
+                ],
             },
             {
                 test: /\.woff2?$/i,
