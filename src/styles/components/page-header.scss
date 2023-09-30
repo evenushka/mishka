@@ -1,0 +1,43 @@
+@import 'Styles/components/titles.scss';
+
+.page-header {
+  background: $color-grey-background;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  @include desktop {
+    height: 255px;
+  }
+
+  @include tablet {
+    height: 226px;
+  }
+
+  @include mobile {
+    height: 176px;
+  }
+
+  &__background {
+    width: 100%;
+    position: absolute;
+
+    @include mobile {
+      display: none;
+    }
+
+    @include tablet {
+      height: 24px;
+      top: 214px;
+      background-image: url('../assets/icons/zigzag-tablet.svg');
+    }
+
+    @include desktop {
+      height: 34px;
+      top: 238px;
+      background-image: url('../assets/icons/zigzag-desktop.svg');
+    }
+  }
+}

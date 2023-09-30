@@ -54,7 +54,8 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            additionalData: '@import "Styles/variables.scss"; @import "Styles/mixins/mixin-adaptive.scss";',
+                            additionalData: '@import "Styles/variables.scss";' +
+                                ' @import "Styles/mixins/mixin-adaptive.scss";',
                         },
                     },
                 ],
