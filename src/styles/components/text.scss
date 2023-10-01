@@ -1,0 +1,23 @@
+.text {
+  font-weight: 400;
+  color: $color-dark-grey;
+
+  &--catalog {
+    font-size: 15px;
+    line-height: 30px;
+
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+
+  &--card {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+}

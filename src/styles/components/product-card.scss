@@ -1,0 +1,34 @@
+@import 'Styles/components/titles.scss';
+
+.product-card {
+  max-height: 658px;
+  max-width: 316px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+  &__inner {
+    background: $color-white;
+    padding: 26px;
+    border: 1px solid $color-gray-border;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-bottom: 1px solid $color-gray-border;
+
+    @include desktop {
+      padding-bottom: 36px;
+    }
+
+    @include tablet {
+      gap: 10px;
+    }
+  }
+
+  &__price {
+    padding-top: 23px;
+  }
+}

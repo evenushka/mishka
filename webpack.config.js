@@ -64,6 +64,10 @@ module.exports = {
                 test: /\.woff2?$/i,
                 type: "asset/resource",
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                type: "asset/resource",
+            }
         ],
     },
 };
