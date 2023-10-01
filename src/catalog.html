@@ -25,7 +25,11 @@
 
     <div>
         <div class="product-card">
-            <img src="./assets/images/kroll-desktop.png" alt="Игрушка зайчик.">
+            <picture class="product-card__picture">
+                <source srcset="./assets/images/kroll-mobile.png" media="(max-width: 767px)">
+                <source srcset="./assets/images/kroll-tablet.png" media="(max-width: 1149px)">
+                <img src="./assets/images/kroll-desktop.png" alt="Игрушка зайчик.">
+            </picture>
             <div class="product-card__inner">
                 <div class="product-card__info">
                     <h3 class="title title--h3">Зайчик-попрыгайчик</h3>

@@ -11,13 +11,14 @@ module.exports = {
     devServer: {
         port: 4200,
         open: true,
-        hot: true,
+        hot: false,
     },
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
         clean: true,
         filename: "[name].[contenthash].js",
+        assetModuleFilename: 'assets/[name][ext]',
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -65,9 +66,9 @@ module.exports = {
                 type: "asset/resource",
             },
             {
-                test: /\.(png|jpe?g|gif)$/i,
-                type: "asset/resource",
-            }
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: "asset/inline",
+            },
         ],
     },
 };

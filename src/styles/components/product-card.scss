@@ -1,16 +1,48 @@
 @import 'Styles/components/titles.scss';
+@import 'Styles/components/text.scss';
 
 .product-card {
-  max-height: 658px;
   max-width: 316px;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
 
+  @include tablet {
+    flex-direction: row;
+  }
+
+  &__picture {
+    @include desktop {
+      width: 316px;
+      height: 462px;
+    }
+
+    @include tablet {
+      width: 334px;
+      height: 334px;
+    }
+
+    @include mobile {
+      width: 260px;
+      height: 195px;
+    }
+  }
+
   &__inner {
     background: $color-white;
-    padding: 26px;
+    padding: 26px 26px 25px 26px;
     border: 1px solid $color-gray-border;
+
+    @include tablet {
+      padding: 26px 34px 23px 34px;
+      width: 335px;
+      flex-shrink: 0;
+    }
+
+    @include mobile {
+      width: 260px;
+      padding: 26px 28px;
+    }
   }
 
   &__info {
@@ -25,10 +57,15 @@
 
     @include tablet {
       gap: 10px;
+      padding-bottom: 171px;
+    }
+
+    @include mobile {
+      padding-bottom: 18px;
     }
   }
 
   &__price {
-    padding-top: 23px;
+    padding-top: 22px;
   }
 }
