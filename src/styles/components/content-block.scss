@@ -1,0 +1,11 @@
+.content-block {
+  max-width: 1150px;
+  padding: 0 50px;
+  margin: 0 auto;
+
+  &--product-cards {
+    display: flex;
+    gap: 51px;
+    margin-top: 128px;
+  }
+}
