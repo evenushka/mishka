@@ -1,6 +1,7 @@
 .video {
   margin-top: 57px;
   display: flex;
+  position: relative;
 
   @include tablet {
     margin-top: 53px;
@@ -26,6 +27,8 @@
   &__order {
     border: 1px solid $color-gray-border;
     padding: 96px 56px 60px 80px;
+    display: flex;
+    flex-direction: column;
 
     @include tablet {
       padding: 37px 42px 46px 42px;
@@ -36,10 +39,41 @@
     }
   }
 
+  &__text {
+    margin-top: 27px;
+
+    @include tablet {
+      margin-top: 24px;
+    }
+
+    @include mobile {
+      margin-top: 212px;
+    }
+  }
+
+  &__title {
+    @include tablet {
+      margin-left: 67px;
+    }
+  }
+
   &__play {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &__icon {
+    width: 32px;
+    height: 22px;
+    position: absolute;
+    top: 46px;
+    left: 748px;
+
+    @include tablet {
+      top: 490px;
+      left: 42px;
+    }
   }
 }
