@@ -65,6 +65,10 @@
 
     &--twostring {
       padding-bottom: 12px;
+
+      @include tablet {
+        padding-bottom: 148px;
+      }
     }
   }
 

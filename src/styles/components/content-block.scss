@@ -3,9 +3,32 @@
   padding: 0 50px;
   margin: 0 auto;
 
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include mobile {
+    max-width: 320px;
+    padding: 0 30px;
+  }
+
   &--product-cards {
     display: flex;
     gap: 51px;
     margin-top: 128px;
+    flex-direction: column;
+
+    @include tablet {
+      margin-top: 80px;
+    }
+
+    @include desktop {
+      flex-direction: row;
+    }
+
+    @include mobile {
+      margin-top: 30px;
+      gap: 30px;
+    }
   }
 }
