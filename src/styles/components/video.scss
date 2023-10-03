@@ -1,0 +1,45 @@
+.video {
+  margin-top: 57px;
+  display: flex;
+
+  @include tablet {
+    margin-top: 53px;
+    flex-direction: column;
+  }
+
+  @include mobile {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+
+  &__picture {
+    width: 668px;
+    height: 455px;
+    position: relative;
+
+    @include mobile {
+      width: 260px;
+      height: 150px;
+    }
+  }
+
+  &__order {
+    border: 1px solid $color-gray-border;
+    padding: 96px 56px 60px 80px;
+
+    @include tablet {
+      padding: 37px 42px 46px 42px;
+    }
+
+    @include mobile {
+      padding: 34px;
+    }
+  }
+
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
