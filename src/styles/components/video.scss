@@ -21,6 +21,8 @@
     @include mobile {
       width: 260px;
       height: 150px;
+      position: absolute;
+      top: 96px;
     }
   }
 
@@ -35,7 +37,7 @@
     }
 
     @include mobile {
-      padding: 34px;
+      padding: 21px 34px;
     }
   }
 
@@ -54,6 +56,10 @@
   &__title {
     @include tablet {
       margin-left: 67px;
+    }
+
+    @include mobile {
+      margin-left: 57px;
     }
   }
 
@@ -74,6 +80,11 @@
     @include tablet {
       top: 490px;
       left: 42px;
+    }
+
+    @include mobile {
+      top: 34px;
+      left: 34px;
     }
   }
 }
