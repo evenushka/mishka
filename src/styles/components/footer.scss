@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  height: 144px;
+  background: $color-grey-background;
+  margin-top: 104px;
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    height: 160px;
+    margin-top: 58px;
+  }
+
+  @include tablet {
+    margin-top: 64px;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 1150px;
+    padding: 51px 50px 58px 50px;
+
+    @include tablet {
+      max-width: 768px;
+    }
+
+    @include mobile {
+      max-width: 320px;
+      padding: 25px 30px 22px 30px;
+    }
+  }
+
+  &__logo {
+    width: 102px;
+    height: 34px;
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
