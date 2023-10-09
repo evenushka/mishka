@@ -31,4 +31,10 @@
       gap: 30px;
     }
   }
+
+  &--hero {
+    background: $color-picture;
+    max-width: 100%;
+    position: relative;
+  }
 }

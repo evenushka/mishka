@@ -45,3 +45,21 @@
   width: 22px;
   height: 22px;
 }
+
+.button--bighero {
+  background: $color-mint;
+  padding: 30px 36px 27px 36px;
+
+  @include mobile {
+    padding: 23px 36px 18px 30px;
+  }
+}
+
+.button--darkhero {
+  background: $color-mint-dark;
+  padding: 31px 33px 27px 36px;
+
+  @include mobile {
+    padding: 21px 27px 22px 30px;
+  }
+}

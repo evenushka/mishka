@@ -59,9 +59,14 @@
     display: flex;
     align-items: center;
     gap: 28px;
+  }
+
+  &__link {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-size: 19px;
     line-height: 18px;
     font-weight: 700;
+    text-decoration: none;
+    color: $color-black;
   }
 }
