@@ -17,6 +17,7 @@
     width: 668px;
     height: 455px;
     position: relative;
+    user-select: none;
 
     @include mobile {
       width: 260px;
@@ -63,11 +64,21 @@
     }
   }
 
+  /* сделать стили для иконкки плей при клике по картинке */
   &__play {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    &:hover {
+      transform: translate(-50%, -50%) scale(120%);
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(80%);
+      opacity: 0.7;
+    }
   }
 
   &__icon {
