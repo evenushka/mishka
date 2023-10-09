@@ -30,5 +30,13 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+    background: $color-dark-grey;
   }
+}
+
+.button--social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 142px;
 }

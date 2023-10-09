@@ -5,6 +5,7 @@
   margin-top: 104px;
   display: flex;
   align-items: center;
+  position: relative;
 
   @include mobile {
     height: 160px;
@@ -17,8 +18,10 @@
 
   &__inner {
     margin: 0 auto;
-    max-width: 1150px;
+    width: 1150px;
     padding: 51px 50px 58px 50px;
+    display: flex;
+    justify-content: space-between;
 
     @include tablet {
       max-width: 768px;
@@ -27,6 +30,19 @@
     @include mobile {
       max-width: 320px;
       padding: 25px 30px 22px 30px;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+
+    &:after {
+      @include mobile {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid $color-gray-line;
+        width: 260px;
+        top: 80px;
+      }
     }
   }
 
@@ -37,5 +53,15 @@
     @include mobile {
       display: none;
     }
+  }
+
+  &__dev {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 19px;
+    line-height: 18px;
+    font-weight: 700;
   }
 }
