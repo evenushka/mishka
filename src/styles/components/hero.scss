@@ -39,9 +39,20 @@
 
   &__button-container {
     display: flex;
+    height: 129px;
+
+    @include tablet {
+      height: 124px;
+    }
 
     @include mobile {
       flex-direction: column;
+      padding-top: 5px;
+      height: 211px;
+
+      &:hover {
+        padding-top: 0;
+      }
     }
   }
 

@@ -49,17 +49,60 @@
 .button--bighero {
   background: $color-mint;
   padding: 30px 36px 27px 36px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+
 
   @include mobile {
     padding: 23px 36px 18px 30px;
+    height: 103px;
+    margin-top: 0;
+    font-size: 19px;
+    line-height: 24px;
+    align-items: center;
+
+    &:hover {
+      height: 108px;
+    }
+  }
+
+  &:hover {
+    background: $color-mint-hero-hover;
+    margin-top: 0;
   }
 }
 
 .button--darkhero {
   background: $color-mint-dark;
   padding: 31px 33px 27px 36px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
 
   @include mobile {
     padding: 21px 27px 22px 30px;
+    height: 103px;
+    margin-top: 0;
+    font-size: 19px;
+    line-height: 24px;
+    align-items: center;
+
+    &:hover {
+      height: 108px;
+    }
+  }
+
+  &:hover {
+    background: $color-mint-very-dark;
+    margin-top: 0;
   }
 }
