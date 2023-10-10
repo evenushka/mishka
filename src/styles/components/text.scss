@@ -20,4 +20,16 @@
       font-size: 15px;
     }
   }
+
+  &--index {
+    font-weight: 400;
+    color: $color-dark-grey;
+    font-size: 17px;
+    line-height: 30px;
+
+    @include mobile {
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
 }
