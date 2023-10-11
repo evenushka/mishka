@@ -98,4 +98,16 @@
       left: 34px;
     }
   }
+
+  &__button {
+    margin-top: 51px;
+
+    @include tablet {
+      margin-top: 40px;
+    }
+
+    @include mobile {
+      margin-top: 41px;
+    }
+  }
 }

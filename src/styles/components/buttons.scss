@@ -13,15 +13,6 @@
   line-height: 16px;
   border: 2px solid $color-dark-grey;
   padding: 16px 0;
-  margin-top: 51px;
-
-  @include tablet {
-    margin-top: 40px;
-  }
-
-  @include mobile {
-    margin-top: 41px;
-  }
 
   &:hover {
     background: $color-dark-grey;

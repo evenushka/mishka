@@ -3,6 +3,14 @@
   margin-top: 70px;
   position: relative;
 
+  @include mobile {
+    padding: 0;
+  }
+
+  @include tablet {
+    padding: 0 218px 69px 0;
+  }
+
   @include desktop {
     background-image: url('../assets/images/weekly-product-desktop.png');
     background-repeat: no-repeat;
@@ -15,6 +23,62 @@
     display: block;
   }
 
+  &__table {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color-dark-grey;
+    border-spacing: 0;
+    width: 292px;
+    margin-top: 48px;
+
+    @include mobile {
+      width: 260px;
+      margin-top: 28px;
+    }
+  }
+
+  &__table-item {
+    border-bottom: 1px solid $color-gray-border;
+    padding: 6px 0 10px 0;
+
+    &--name {
+      width: 97px;
+    }
+  }
+
+  &__price-container {
+    margin-top: 120px;
+    padding-right: 253px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 33px;
+
+    @include tablet {
+      padding-right: 158px;
+      margin-top: 57px;
+    }
+
+    @include mobile {
+      margin-top: 368px;
+      gap: 24px;
+      padding: 0;
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-dark-grey;
+
+    @include mobile {
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+
   &__deco {
     position: absolute;
     width: 100%;
@@ -22,5 +86,28 @@
     left: 0;
     top: 1614px;
     background-image: url("../assets/icons/wavy-desktop.svg");
+
+    @include tablet {
+      background-image: url("../assets/icons/wavy-tablet.svg");
+      height: 17px;
+      top: 1463px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 101px;
+    left: 334px;
+    width: 334px;
+    height: 404px;
+
+    @include mobile {
+      top: 312px;
+      left: 0;
+    }
+
+    @include desktop {
+      display: none;
+    }
   }
 }
