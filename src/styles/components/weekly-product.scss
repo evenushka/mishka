@@ -92,6 +92,10 @@
       height: 17px;
       top: 1463px;
     }
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__image {
