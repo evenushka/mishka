@@ -110,4 +110,29 @@
       display: none;
     }
   }
+
+  &__feature {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 700;
+    color: $color-mint;
+    width: 100px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 72px;
+    left: 32px;
+
+    @include tablet {
+      top: 11px;
+      left: 565px;
+    }
+
+    @include mobile {
+      width: 160px;
+      text-align: left;
+      top: 33px;
+      left: 0;
+    }
+  }
 }
