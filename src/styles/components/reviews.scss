@@ -24,4 +24,17 @@
   &__contact {
     margin-top: 44px;
   }
+
+  &__buttons-container {
+    width: 175px;
+    position: absolute;
+    top: 78px;
+    right: 0;
+  }
+
+  &__arrows {
+    display: flex;
+    gap: 75px;
+    margin-top: 190px;
+  }
 }
