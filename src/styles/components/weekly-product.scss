@@ -94,7 +94,9 @@
     }
 
     @include mobile {
-      display: none;
+      background-image: url("../assets/icons/wavy-mobile.svg");
+      height: 6px;
+      top: 1446px;
     }
   }
 

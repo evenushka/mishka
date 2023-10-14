@@ -1,0 +1,27 @@
+.reviews {
+  margin: 90px auto 0 auto;
+  max-width: 1050px;
+  background-image: url("../assets/images/rewiev-bg.png");
+  background-repeat: no-repeat;
+  height: 457px;
+  padding: 78px 100px 96px 174px;
+  position: relative;
+
+  @include tablet {
+    max-width: 768px;
+    margin-top: 82px;
+  }
+
+  @include mobile {
+    background: transparent;
+  }
+
+  &__text {
+    margin-top: 35px;
+    display: block;
+  }
+
+  &__contact {
+    margin-top: 44px;
+  }
+}

@@ -4,10 +4,12 @@
 
   @include tablet {
     padding: 0;
+    margin-top: 56px;
   }
 
   @include mobile {
     padding: 0;
+    margin-top: 73px;
   }
 
   &__container {
