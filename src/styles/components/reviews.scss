@@ -15,15 +15,30 @@
 
   @include mobile {
     background: transparent;
+    max-width: 260px;
+    height: 438px;
+    padding: 0;
   }
 
   &__text {
     margin-top: 35px;
     display: block;
+
+    @include tablet {
+      margin-top: 38px;
+    }
+
+    @include mobile {
+      margin-top: 14px;
+    }
   }
 
   &__contact {
     margin-top: 44px;
+
+    @include mobile {
+      margin-top: 33px;
+    }
   }
 
   &__buttons-container {
@@ -31,11 +46,24 @@
     position: absolute;
     top: 78px;
     right: 0;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      top: 380px;
+      gap: 38px;
+      width: 260px;
+    }
   }
 
   &__arrows {
     display: flex;
     gap: 75px;
     margin-top: 190px;
+
+    @include mobile {
+      margin-top: 0;
+      gap: 0;
+    }
   }
 }
