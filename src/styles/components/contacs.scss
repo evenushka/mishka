@@ -1,0 +1,26 @@
+.contacts {
+  margin-top: 160px;
+  display: flex;
+
+  @include tablet {
+    margin-top: 152px;
+  }
+
+  @include mobile {
+    margin-top: 110px;
+  }
+
+  &__container {
+    padding: 0 58px 0 175px;
+  }
+
+  &__map {
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
